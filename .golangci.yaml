@@ -1,0 +1,33 @@
+run:
+  timeout: 5m
+  tests: false
+  build-tags:
+    - e2e
+    - mage
+    - ignored
+
+linters:
+  disable-all: false
+  presets:
+    - bugs
+    - unused
+    - complexity
+    - format
+    - performance
+    - style
+  enable:
+    - gci
+  disable:
+    - paralleltest
+    - nlreturn
+    - exhaustivestruct
+    - wsl
+    - godox
+    - scopelint
+    - maligned
+    - interfacer
+    - golint
+    - ireturn
+    - varnamelen
+    - exhaustruct
+    - contextcheck
